@@ -44,8 +44,8 @@ export const hero: {
     en: "Energy Supply Chains & Future Technologies Exhibition",
   },
   subtitle: {
-    ar: "ملتقى B2B حصري في مدينة الملك سلمان للطاقة (SPARK) — حيث تتحول التقنيات إلى عقود توريد وشراكات مستدامة.",
-    en: "An exclusive B2B hub at King Salman Energy Park (SPARK) — where technologies turn into supply contracts and lasting partnerships.",
+    ar: "معرض ومؤتمر B2B حصري في مدينة الملك سلمان للطاقة (SPARK) — حيث تتحول التقنيات إلى عقود توريد وشراكات مستدامة.",
+    en: "An exclusive B2B exhibition and conference at King Salman Energy Park (SPARK) — where technologies turn into supply contracts and lasting partnerships.",
   },
   ctaPrimary: { ar: "احجز مساحتك الآن", en: "Book Your Space" },
   ctaSecondary: { ar: "سجّل كزائر", en: "Register as Visitor" },
@@ -72,8 +72,8 @@ export const intro: {
     en: "The Energy Supply Chains & Future Technologies Exhibition launches as a specialized, exclusive event built entirely on a Business-to-Business (B2B) model — where companies meet companies, decision-makers connect with executors, in a professional environment engineered for closing deals and saving time and effort.",
   },
   lead: {
-    ar: "التواجد في هذا الملتقى استثمار استراتيجي يمنح شركتك تموضعاً قوياً كقائد في السوق، ويفتح أمامها:",
-    en: "Being present at this forum is a strategic investment that positions your company as a market leader and opens the door to:",
+    ar: "التواجد في هذا المعرض والمؤتمر استثمار استراتيجي يمنح شركتك تموضعاً قوياً كقائد في السوق، ويفتح أمامها:",
+    en: "Being present at this exhibition and conference is a strategic investment that positions your company as a market leader and opens the door to:",
   },
   cards: [
     {
@@ -114,8 +114,8 @@ export const vision: {
     en: "From the Heart of SPARK... Where Ideas Become Contracts",
   },
   body: {
-    ar: "ينطلق معرض سلاسل إمداد الطاقة وتقنيات المستقبل من مدينة الملك سلمان للطاقة (SPARK)، كملتقى استراتيجي يجمع عمالقة النفط والغاز، ورواد الثورة الصناعية الرابعة، ومبتكري الحلول اللوجستية، وشركات المقاولات الكبرى — حيث تتحول الأفكار والتقنيات إلى عقود توريد وشراكات مستدامة.",
-    en: "The Energy Supply Chains & Future Technologies Exhibition launches from King Salman Energy Park (SPARK) as a strategic forum gathering oil & gas giants, Industry 4.0 pioneers, logistics innovators, and major contractors — where ideas and technologies transform into supply contracts and sustainable partnerships.",
+    ar: "ينطلق معرض سلاسل إمداد الطاقة وتقنيات المستقبل من مدينة الملك سلمان للطاقة (SPARK)، كمعرض ومؤتمر استراتيجي يجمع عمالقة النفط والغاز، ورواد الثورة الصناعية الرابعة، ومبتكري الحلول اللوجستية، وشركات المقاولات الكبرى — حيث تتحول الأفكار والتقنيات إلى عقود توريد وشراكات مستدامة.",
+    en: "The Energy Supply Chains & Future Technologies Exhibition launches from King Salman Energy Park (SPARK) as a strategic exhibition and conference gathering oil & gas giants, Industry 4.0 pioneers, logistics innovators, and major contractors — where ideas and technologies transform into supply contracts and sustainable partnerships.",
   },
 };
 
