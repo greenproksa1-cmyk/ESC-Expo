@@ -55,7 +55,7 @@ export function Countdown({ target }: { target: string }) {
           className="relative flex flex-col items-center justify-center rounded-xl border border-spark-400/25 bg-navy-900/70 px-1 py-3 backdrop-blur-sm sm:py-4"
         >
           <span className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-spark-400/60 to-transparent" />
-          <span className="font-mono text-2xl font-black tabular-nums text-white sm:text-4xl">
+          <span className="text-2xl font-bold tabular-nums text-white sm:text-4xl">
             {String(u.value).padStart(2, "0")}
           </span>
           <span className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-spark-300/90 sm:text-xs">

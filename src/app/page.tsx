@@ -12,7 +12,7 @@ import { StickyCta } from "@/components/site/sticky-cta";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-navy-950">
+    <main className="relative min-h-screen bg-navy-950 pb-16 md:pb-0">
       <SiteHeader />
       <Hero />
       <Intro />

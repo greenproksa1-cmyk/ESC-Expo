@@ -10,7 +10,6 @@ import {
   Loader2,
   CheckCircle2,
   Hexagon,
-  Leaf,
   Linkedin,
   Twitter,
   Facebook,
@@ -329,12 +328,16 @@ export function Contact() {
               <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
                 {lang === "ar" ? "منظم بواسطة" : "Organized By"}
               </div>
-              <div className="flex items-center gap-2">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-spark-400/30 bg-spark-500/10">
-                  <Leaf className="h-5 w-5 text-spark-400" />
+              <div className="flex items-center gap-2.5">
+                <div className="flex items-center justify-center rounded-lg border border-spark-400/30 bg-white/95 p-1.5">
+                  <img
+                    src="/images/green-projects-logo.png"
+                    alt="GREEN PROJECTS — شركة مشاريع خضراء"
+                    className="h-9 w-auto object-contain"
+                  />
                 </div>
                 <div className="text-start leading-tight">
-                  <div className="text-sm font-black text-white">
+                  <div className="text-sm font-bold text-white">
                     GREEN <span className="text-spark-400">PROJECTS</span>
                   </div>
                   <div className="text-[10px] text-slate-400">

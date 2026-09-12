@@ -52,3 +52,38 @@ Stage Summary:
 - Sticky CTA, scroll animations (framer-motion), responsive design, SEO metadata.
 - All verification passed via Agent Browser (rendering, interactions, form submission, DB persistence).
 - Artifacts: src/lib/i18n.ts, src/lib/content.ts, src/app/layout.tsx, src/app/globals.css, src/app/page.tsx, src/app/api/contact/route.ts, 14 components in src/components/site/, 3 images in public/images/.
+
+---
+Task ID: 2
+Agent: main (Z.ai Code)
+Task: Use uploaded GREEN PROJECTS logo, switch entire site to a single professional/formal font (no font mixing/overlapping), and fix any errors/issues.
+
+Work Log:
+- Analyzed uploaded logo (logo (1).png) via VLM: GREEN PROJECTS logo with sprout icon, English + Arabic text (شركة مشاريع خضراء), dark green background (RGB 64,96,80).
+- Wrote sharp script (scripts/process-logo.ts) to remove dark green background → transparent PNG (87.8% pixels transparent, text preserved). Saved to public/images/green-projects-logo.png.
+- Switched site font from Cairo+Tajawal (2 mixed fonts) to single IBM Plex Sans Arabic family (covers both Arabic + Latin scripts, professional/corporate).
+- Initial attempt via next/font/google failed in Turbopack dev (CSS module variable --font-plex not injected into browser). Switched to direct <link> tags to Google Fonts CDN in layout.tsx <head> (reliable).
+- Set font-family directly in globals.css body rule; removed font-sans utility class from body (it was overriding with Tailwind default stack).
+- Added CSS rule: `html[dir="rtl"] [class*="tracking-"] { letter-spacing: normal !important; }` — Arabic is a cursive/connected script, letter-spacing disconnects letters and breaks word shapes.
+- Improved typographic rhythm: h1-h6 line-height 1.25, p line-height 1.75, font-smoothing, kerning/ligature features.
+- Updated Organizer section: replaced placeholder Leaf icon with actual GREEN PROJECTS logo on white badge with green glow.
+- Updated Footer: replaced placeholder Leaf icon with actual GREEN PROJECTS logo.
+- Removed unused Leaf imports.
+- Fixed mobile sticky CTA overlap: was floating pill covering card content. Now full-width bottom bar on mobile (md:hidden), floating pill on desktop (hidden md:block). Added pb-16 md:pb-0 to main for mobile spacing.
+- Sticky CTA now auto-hides when contact section is in view (user already at conversion point).
+- Lint passes (0 errors, 1 informational warning about _document.js which doesn't apply to App Router).
+- Verified via Agent Browser + VLM:
+  - Font: "IBM Plex Sans Arabic" confirmed in computed styles.
+  - Arabic letters properly connected (no spacing breakage).
+  - No text overlap on desktop or mobile.
+  - GREEN PROJECTS logo displays cleanly on white badge in both organizer section and footer.
+  - Language toggle AR↔EN works (font stays consistent, dir switches rtl↔ltr).
+  - Mobile sticky CTA is now a bottom bar that doesn't cover content.
+  - No console/runtime errors.
+
+Stage Summary:
+- Single professional font (IBM Plex Sans Arabic) across entire site — no mixing/overlapping.
+- Arabic letter-spacing issue fixed (cursive script integrity preserved).
+- GREEN PROJECTS logo integrated with transparent background in organizer + footer.
+- Mobile sticky CTA redesigned as bottom bar (no content overlap).
+- All verification passed.

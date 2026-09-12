@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Hexagon, Leaf, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { organizer } from "@/lib/content";
 import { SectionHeading } from "./section-heading";
@@ -44,12 +44,15 @@ export function Organizer() {
               {/* Logo */}
               <div className="md:col-span-4">
                 <div className="flex flex-col items-center gap-4">
-                  <div className="relative flex h-32 w-32 items-center justify-center rounded-2xl border-2 border-spark-400/40 bg-gradient-to-br from-navy-800 to-navy-950 glow-green">
-                    <Hexagon className="absolute -inset-3 h-36 w-36 text-spark-400/15" strokeWidth={1} />
-                    <Leaf className="h-12 w-12 text-spark-400" />
+                  <div className="relative flex items-center justify-center rounded-2xl border border-spark-400/30 bg-white/95 p-5 glow-green-sm">
+                    <img
+                      src="/images/green-projects-logo.png"
+                      alt="GREEN PROJECTS — شركة مشاريع خضراء"
+                      className="h-28 w-auto object-contain"
+                    />
                   </div>
                   <div className="text-center">
-                    <div className="text-xl font-black tracking-tight text-white">
+                    <div className="text-lg font-bold tracking-tight text-white">
                       GREEN <span className="text-spark-400">PROJECTS</span>
                     </div>
                     <div className="mt-1 text-xs font-medium text-slate-400">{organizer.role[lang]}</div>
