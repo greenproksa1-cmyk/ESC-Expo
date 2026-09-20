@@ -8,7 +8,7 @@ export interface Bi {
 export const t = (b: Bi, lang: Language) => b[lang];
 
 // Event date for countdown — ESC Expo 2026 launch
-export const EVENT_DATE = "2026-03-15T09:00:00+03:00";
+export const EVENT_DATE = "2026-12-08T09:00:00+03:00";
 
 export const contact = {
   phone: "+966 59 0401 777",
@@ -51,7 +51,7 @@ export const hero: {
   ctaSecondary: { ar: "سجّل كزائر", en: "Register as Visitor" },
   ctaTertiary: { ar: "تواصل معنا", en: "Contact Us" },
   location: { ar: "مدينة الملك سلمان للطاقة — SPARK", en: "King Salman Energy Park — SPARK" },
-  dateLabel: { ar: "مارس 2026", en: "March 2026" },
+  dateLabel: { ar: "ديسمبر 2026", en: "December 2026" },
   countdownTitle: { ar: "العد التنازلي للانطلاق", en: "Countdown To Launch" },
 };
 

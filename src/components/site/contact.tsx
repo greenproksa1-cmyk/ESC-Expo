@@ -9,7 +9,6 @@ import {
   Send,
   Loader2,
   CheckCircle2,
-  Hexagon,
   Linkedin,
   Twitter,
   Facebook,
@@ -305,16 +304,11 @@ export function Contact() {
             {/* Brand */}
             <div className="flex flex-col items-center gap-3 text-center md:items-start md:text-start">
               <div className="flex items-center gap-2.5">
-                <div className="relative flex h-10 w-10 items-center justify-center">
-                  <Hexagon className="absolute h-10 w-10 text-spark-400/30" strokeWidth={1.2} />
-                  <span className="text-[13px] font-black text-spark-400">ESC</span>
-                </div>
-                <div className="leading-none">
-                  <div className="text-sm font-extrabold text-white">ESC Expo 2026</div>
-                  <div className="text-[10px] font-medium uppercase tracking-wider text-spark-300/80">
-                    {lang === "ar" ? "سلاسل إمداد الطاقة" : "Energy Supply Chains"}
-                  </div>
-                </div>
+                <img
+                  src="/images/esc-expo-logo.png"
+                  alt="ESC Expo 2026 Logo"
+                  className="h-12 w-auto object-contain"
+                />
               </div>
               <p className="max-w-xs text-xs leading-relaxed text-slate-400">
                 {lang === "ar"

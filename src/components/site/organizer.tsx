@@ -44,19 +44,28 @@ export function Organizer() {
               {/* Logo */}
               <div className="md:col-span-4">
                 <div className="flex flex-col items-center gap-4">
-                  <div className="relative flex items-center justify-center rounded-2xl border border-spark-400/30 bg-white/95 p-5 glow-green-sm">
-                    <img
-                      src="/images/green-projects-logo.png"
-                      alt="GREEN PROJECTS — شركة مشاريع خضراء"
-                      className="h-28 w-auto object-contain"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <div className="text-lg font-bold tracking-tight text-white">
-                      GREEN <span className="text-spark-400">PROJECTS</span>
-                    </div>
-                    <div className="mt-1 text-xs font-medium text-slate-400">{organizer.role[lang]}</div>
-                  </div>
+              {/* ESC Expo Logo */}
+              <div className="flex items-center justify-center rounded-2xl border border-spark-400/30 bg-white/95 p-4 glow-green-sm">
+                <img
+                  src="/images/esc-expo-logo.png"
+                  alt="ESC Expo 2026 — معرض سلاسل إمداد الطاقة"
+                  className="h-24 w-auto object-contain"
+                />
+              </div>
+              {/* GREEN PROJECTS Logo */}
+              <div className="relative flex items-center justify-center rounded-2xl border border-spark-400/30 bg-white/95 p-5 glow-green-sm">
+                <img
+                  src="/images/green-projects-logo.png"
+                  alt="GREEN PROJECTS — شركة مشاريع خضراء"
+                  className="h-28 w-auto object-contain"
+                />
+              </div>
+              <div className="text-center">
+                <div className="text-lg font-bold tracking-tight text-white">
+                  GREEN <span className="text-spark-400">PROJECTS</span>
+                </div>
+                <div className="mt-1 text-xs font-medium text-slate-400">{organizer.role[lang]}</div>
+              </div>
                 </div>
               </div>
 

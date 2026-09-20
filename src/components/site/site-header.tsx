@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Languages, Hexagon } from "lucide-react";
+import { Menu, X, Languages } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { nav, hero } from "@/lib/content";
 import { Button } from "@/components/ui/button";
@@ -44,17 +44,11 @@ export function SiteHeader() {
           className="group flex items-center gap-2.5"
           aria-label="ESC Expo 2026"
         >
-          <span className="relative flex h-10 w-10 items-center justify-center">
-            <Hexagon className="absolute h-10 w-10 text-spark-400/30" strokeWidth={1.2} />
-            <span className="text-[15px] font-black leading-none text-spark-400">ESC</span>
-            <span className="absolute -bottom-0.5 right-1 h-1 w-1 rounded-full bg-spark-400 shadow-[0_0_8px_2px_rgba(52,211,153,0.8)]" />
-          </span>
-          <span className="hidden flex-col leading-none sm:flex">
-            <span className="text-sm font-extrabold text-white">ESC Expo 2026</span>
-            <span className="text-[10px] font-medium uppercase tracking-wider text-spark-300/80">
-              {lang === "ar" ? "سلاسل إمداد الطاقة" : "Energy Supply Chains"}
-            </span>
-          </span>
+          <img
+            src="/images/esc-expo-logo.png"
+            alt="ESC Expo 2026 Logo"
+            className="h-10 w-auto object-contain"
+          />
         </button>
 
         {/* Desktop nav */}
