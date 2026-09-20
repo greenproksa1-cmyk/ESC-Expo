@@ -33,21 +33,21 @@ export function SiteHeader() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-spark-400/15 bg-navy-950/85 backdrop-blur-xl"
-          : "bg-transparent"
+          ? "border-b border-slate-200 bg-white/95 shadow-md backdrop-blur-xl"
+          : "border-b border-slate-200/90 bg-white/95 shadow-sm backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex h-[68px] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <button
           onClick={() => goTo("hero")}
-          className="group flex items-center gap-2.5"
+          className="group flex items-center gap-2.5 transition-transform hover:scale-[1.02]"
           aria-label="ESC Expo 2026"
         >
           <img
             src="/images/esc-expo-logo.png"
             alt="ESC Expo 2026 Logo"
-            className="h-10 w-auto object-contain"
+            className="h-11 sm:h-12 w-auto object-contain"
           />
         </button>
 
@@ -57,7 +57,7 @@ export function SiteHeader() {
             <button
               key={n.id}
               onClick={() => goTo(n.id)}
-              className="rounded-md px-3 py-2 text-sm font-medium text-slate-300 transition-colors hover:text-spark-300"
+              className="rounded-md px-3 py-2 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-emerald-700"
             >
               {n.label[lang]}
             </button>
@@ -70,21 +70,21 @@ export function SiteHeader() {
             variant="outline"
             size="sm"
             onClick={toggle}
-            className="border-spark-400/30 bg-spark-500/5 text-spark-200 hover:bg-spark-500/15 hover:text-spark-100"
+            className="border-slate-300 bg-slate-50 text-slate-800 hover:bg-slate-100 hover:text-slate-950 font-bold"
           >
             <Languages className="h-4 w-4" />
-            <span className="font-bold">{lang === "ar" ? "EN" : "ع"}</span>
+            <span>{lang === "ar" ? "EN" : "ع"}</span>
           </Button>
           <Button
             size="sm"
             onClick={() => goTo("contact")}
-            className="hidden bg-spark-500 text-navy-950 hover:bg-spark-400 sm:inline-flex"
+            className="hidden bg-emerald-600 text-white font-bold hover:bg-emerald-700 shadow-sm sm:inline-flex"
           >
             {hero.ctaPrimary[lang]}
           </Button>
           <button
             onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/10 text-slate-200 lg:hidden"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-300 text-slate-800 hover:bg-slate-100 lg:hidden"
             aria-label="Menu"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -100,21 +100,21 @@ export function SiteHeader() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-white/10 bg-navy-950/95 backdrop-blur-xl lg:hidden"
+            className="overflow-hidden border-t border-slate-200 bg-white/98 shadow-xl backdrop-blur-xl lg:hidden"
           >
             <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6">
               {nav.map((n) => (
                 <button
                   key={n.id}
                   onClick={() => goTo(n.id)}
-                  className="rounded-lg px-4 py-3 text-start text-sm font-medium text-slate-200 transition-colors hover:bg-spark-500/10 hover:text-spark-300"
+                  className="rounded-lg px-4 py-3 text-start text-sm font-semibold text-slate-800 transition-colors hover:bg-slate-100 hover:text-emerald-700"
                 >
                   {n.label[lang]}
                 </button>
               ))}
               <Button
                 onClick={() => goTo("contact")}
-                className="mt-2 bg-spark-500 text-navy-950 hover:bg-spark-400"
+                className="mt-2 bg-emerald-600 text-white font-bold hover:bg-emerald-700 shadow-sm"
               >
                 {hero.ctaPrimary[lang]}
               </Button>

@@ -298,19 +298,19 @@ export function Contact() {
       </div>
 
       {/* Footer */}
-      <footer className="relative mt-20 border-t border-white/10 bg-navy-950/80">
+      <footer className="relative mt-20 border-t border-slate-200 bg-white text-slate-800">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center justify-between gap-6 md:flex-row md:items-start">
+          <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-center">
             {/* Brand */}
             <div className="flex flex-col items-center gap-3 text-center md:items-start md:text-start">
               <div className="flex items-center gap-2.5">
                 <img
                   src="/images/esc-expo-logo.png"
                   alt="ESC Expo 2026 Logo"
-                  className="h-12 w-auto object-contain"
+                  className="h-14 w-auto object-contain"
                 />
               </div>
-              <p className="max-w-xs text-xs leading-relaxed text-slate-400">
+              <p className="max-w-xs text-xs leading-relaxed text-slate-600">
                 {lang === "ar"
                   ? "معرض B2B حصري في قطاع الطاقة بمدينة الملك سلمان للطاقة (SPARK)."
                   : "An exclusive B2B energy exhibition at King Salman Energy Park (SPARK)."}
@@ -319,11 +319,11 @@ export function Contact() {
 
             {/* Organizer */}
             <div className="flex flex-col items-center gap-3 text-center">
-              <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
+              <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
                 {lang === "ar" ? "منظم بواسطة" : "Organized By"}
               </div>
-              <div className="flex items-center gap-2.5">
-                <div className="flex items-center justify-center rounded-lg border border-spark-400/30 bg-white/95 p-1.5">
+              <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 shadow-sm">
+                <div className="flex items-center justify-center rounded-lg border border-slate-200 bg-white p-1">
                   <img
                     src="/images/green-projects-logo.png"
                     alt="GREEN PROJECTS — شركة مشاريع خضراء"
@@ -331,10 +331,10 @@ export function Contact() {
                   />
                 </div>
                 <div className="text-start leading-tight">
-                  <div className="text-sm font-bold text-white">
-                    GREEN <span className="text-spark-400">PROJECTS</span>
+                  <div className="text-sm font-bold text-slate-900">
+                    GREEN <span className="text-emerald-600">PROJECTS</span>
                   </div>
-                  <div className="text-[10px] text-slate-400">
+                  <div className="text-[11px] text-slate-500">
                     {lang === "ar" ? "قرين بروجكتس" : "Project Owner"}
                   </div>
                 </div>
@@ -342,27 +342,27 @@ export function Contact() {
             </div>
 
             {/* Contact mini */}
-            <div className="flex flex-col items-center gap-2 text-center md:items-end md:text-end">
-              <a href={`tel:${contact.phoneHref}`} className="flex items-center gap-2 text-xs text-slate-300 hover:text-spark-300" dir="ltr">
-                <Phone className="h-3.5 w-3.5 text-spark-400" />
+            <div className="flex flex-col items-center gap-2.5 text-center md:items-end md:text-end">
+              <a href={`tel:${contact.phoneHref}`} className="flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-emerald-600 transition-colors" dir="ltr">
+                <Phone className="h-3.5 w-3.5 text-emerald-600" />
                 {contact.phone}
               </a>
-              <a href={`mailto:${contact.email}`} className="flex items-center gap-2 text-xs text-slate-300 hover:text-spark-300" dir="ltr">
-                <Mail className="h-3.5 w-3.5 text-spark-400" />
+              <a href={`mailto:${contact.email}`} className="flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-emerald-600 transition-colors" dir="ltr">
+                <Mail className="h-3.5 w-3.5 text-emerald-600" />
                 {contact.email}
               </a>
-              <span className="flex items-center gap-2 text-xs text-slate-300">
-                <MapPin className="h-3.5 w-3.5 text-spark-400" />
+              <span className="flex items-center gap-2 text-xs font-semibold text-slate-700">
+                <MapPin className="h-3.5 w-3.5 text-emerald-600" />
                 {contact.address[lang]}
               </span>
             </div>
           </div>
 
-          <div className="mt-8 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-6 text-center sm:flex-row">
+          <div className="mt-8 flex flex-col items-center justify-between gap-2 border-t border-slate-200 pt-6 text-center sm:flex-row">
             <p className="text-xs text-slate-500">
               © {new Date().getFullYear()} ESC Expo 2026 — GREEN PROJECTS. {contactSection.rights[lang]}.
             </p>
-            <p className="text-xs text-slate-600">
+            <p className="text-xs font-medium text-slate-600">
               {lang === "ar" ? "مدينة الملك سلمان للطاقة — SPARK" : "King Salman Energy Park — SPARK"}
             </p>
           </div>
